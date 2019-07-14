@@ -23,3 +23,5 @@ def solution(s): # DP 문제
                 else:
                     L[j][i + j] = False
     return longest_palindrome
+
+# 참고 : https://devdoggo.netlify.com/post/alg_ds/challenges/longest_palindrome/
