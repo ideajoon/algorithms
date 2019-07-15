@@ -25,3 +25,12 @@ def solution(n, stations, w):
         if (n - cover) % width > 0:
             answer += 1
     return answer  
+
+
+#n = 11
+#stations = [4, 11]
+#w = 1
+#answer = 3
+
+#참고 : https://school.programmers.co.kr/courses/10021/lessons/58509
+#참고 : https://velog.io/@songjy6565/%EA%B8%B0%EC%A7%80%EA%B5%AD-%EC%84%A4%EC%B9%98
