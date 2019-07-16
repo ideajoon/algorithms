@@ -1,3 +1,27 @@
+import math
+
+def solution(n, stations, w):
+    stations.sort()
+    diff = []
+    
+    if stations[0] != 1:
+        diff.append(stations[0] - 1 - w)
+            
+    for i in range(len(stations) - 1):
+        diff.append(stations[i + 1] - stations[i] - 1 - (2 * w))
+        
+    if stations[-1] != n:
+        diff.append(n - stations[-1] - w)
+        
+    notcover_area = [x for x in diff if x > 0]
+    ans_list = [math.ceil(x / (2 * w + 1)) for x in notcover_area]
+    
+    ans = sum(ans_list) 
+    
+    return ans
+
+
+
 # def solution(n, stations, w):
 #     stations.sort()
 #     spread_area = []
