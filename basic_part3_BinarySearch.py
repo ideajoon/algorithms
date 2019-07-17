@@ -21,4 +21,5 @@ def solution(L, x):
 
     return answer
     
-    # 참고 : https://programmers.co.kr/learn/courses/57/lessons/13775
+
+# 참고 : https://programmers.co.kr/learn/courses/57/lessons/13775
