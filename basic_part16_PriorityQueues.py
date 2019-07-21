@@ -141,18 +141,10 @@ class PriorityQueue:
 
     def enqueue(self, x):
         newNode = Node(x)
-        curr = 
-self.queue.head
-
-        while 
-curr.next.data != None
- and 
-x < curr.next.data
-:
+        curr = self.queue.head
+        while curr.next.data != None and x < curr.next.data:
             curr = curr.next
-        self.queue.
-insertAfter
-(curr, newNode)
+        self.queue.insertAfter(curr, newNode)
 
     def dequeue(self):
         return self.queue.popAt(self.queue.getLength())
