@@ -135,29 +135,22 @@ class LinkedListQueue:
         self.data = DoublyLinkedList()
 
     def size(self):
-        return 
-self.data.getLength()
-
+        return self.data.getLength()
 
     def isEmpty(self):
-        return 
-self.data.getLength() == 0
+        return self.data.getLength() == 0
 
 
     def enqueue(self, item):
         node = Node(item)
-        
-self.data.insertAt(self.data.nodeCount + 1, node)
-
+        self.data.insertAt(self.data.nodeCount + 1, node)
 
     def dequeue(self):
-        return 
-self.data.popAt(1)
+        return self.data.popAt(1)
 
 
     def peek(self):
-        return 
-self.data.getAt(1).data
+        return self.data.getAt(1).data
 
 
 
